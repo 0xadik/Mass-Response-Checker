@@ -10,7 +10,6 @@ print('''
 file = str(input("Enter Your File Name: ")).strip()
 print("[=] Loading Please wait...")
 print("\n")
-time.sleep(3)
 with open(file , "r") as urls:
     for url in urls:
         print(url.strip())
@@ -21,6 +20,6 @@ with open(file , "r") as urls:
             print("[=] Saved !!!")
             print("\n")
         else:
-            print("[=] 404 Not Found")
+            print("False")
             print("\n")
 input("[+] Press Enter To Exit")
